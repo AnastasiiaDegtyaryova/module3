@@ -1,0 +1,1 @@
+To run the application, configure Tomcat 9 in Run Configurations and navigate to http://localhost:8080/Module3.
