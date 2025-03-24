@@ -1,0 +1,85 @@
+{
+  "title": "Maven, JUnit, Mockito, Логування",
+  "questions": [
+    {
+      "text": "Який файл у Maven містить залежності та конфігурацію проєкту?",
+      "options": ["pom.xml", "build.gradle", "project.yaml", "config.xml"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Яка команда запускає тести в Maven?",
+      "options": ["mvn test", "mvn compile", "mvn run", "mvn clean install"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Для чого використовується Mockito?",
+      "options": [
+        "Мокування залежностей у тестах",
+        "Реєстрація сервісів",
+        "Складання артефактів",
+        "Збірка jar-файлів"
+      ],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що таке Log4j або SLF4J?",
+      "options": [
+        "Інструменти для логування в Java",
+        "Бібліотеки UI",
+        "Фреймворки для тестування",
+        "СУБД"
+      ],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що означає анотація @Test у JUnit?",
+      "options": [
+        "Позначає тестовий метод",
+        "Позначає сервлет",
+        "Позначає помилку",
+        "Позначає параметр"
+      ],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що таке dependency в Maven?",
+      "options": [
+        "Зовнішня бібліотека або модуль, що підключається до проєкту",
+        "Налаштування доступу",
+        "Файл логів",
+        "Підключення до БД"
+      ],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Для чого використовується анотація @BeforeEach у JUnit 5?",
+      "options": [
+        "Метод виконується перед кожним тестом",
+        "Метод виконується один раз на початку",
+        "Виконується після всіх тестів",
+        "Позначає конструктор"
+      ],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що таке scope 'test' у Maven?",
+      "options": [
+        "Залежність, яка потрібна лише під час тестування",
+        "Бібліотека для production",
+        "Конфігурація логів",
+        "Плагін компіляції"
+      ],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Як перевірити, чи був викликаний метод у Mockito?",
+      "options": ["verify(mock).methodName()", "assertEquals()", "check()", "observe()"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Яка команда Maven створює jar-файл?",
+      "options": ["mvn package", "mvn install", "mvn run", "mvn jar"],
+      "correctOptionIndex": 0
+    }
+  ]
+}

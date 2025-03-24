@@ -1,0 +1,65 @@
+{
+  "title": "Веб-технології",
+  "questions": [
+    {
+      "text": "Який HTTP метод використовується для отримання ресурсу з сервера?",
+      "options": ["GET", "POST", "PUT", "DELETE"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що таке JSP?",
+      "options": ["JavaServer Pages", "JavaStatic Page", "JavaScript Page", "Java Servlet Processing"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Який тег JSTL використовується для умовного виконання блоку коду?",
+      "options": ["<c:if>", "<c:choose>", "<c:when>", "<c:foreach>"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Де зберігаються HTTP-сесії?",
+      "options": ["На сервері", "У браузері", "У базі даних", "У HTML-документі"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Який метод сервлета викликається при GET-запиті?",
+      "options": ["doGet", "doPost", "service", "init"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що таке Tomcat?",
+      "options": ["Сервлет-контейнер", "База даних", "Платформа для логування", "Фреймворк для UI"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Який тег JSTL використовується для циклів?",
+      "options": ["<c:forEach>", "<c:while>", "<c:loop>", "<c:iterate>"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що означає статус HTTP 404?",
+      "options": ["Ресурс не знайдено", "Помилка сервера", "Успішно виконано", "Неавторизовано"],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Яке призначення об'єкта HttpSession?",
+      "options": [
+        "Зберігання даних між запитами одного користувача",
+        "Налаштування сервера",
+        "Обробка cookie",
+        "Аналіз трафіку"
+      ],
+      "correctOptionIndex": 0
+    },
+    {
+      "text": "Що таке cookie у веб-контексті?",
+      "options": [
+        "Невеликий фрагмент даних, що зберігається на клієнті",
+        "Файл логування",
+        "Параметр бази даних",
+        "Запис у сесійну змінну"
+      ],
+      "correctOptionIndex": 0
+    }
+  ]
+}
