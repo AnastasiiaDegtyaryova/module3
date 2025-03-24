@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="org.example.quest.engine.Question" %>
+<%@ page import="org.example.quest.model.Question" %>
 <%@ page import="java.util.List" %>
 
 <html>
@@ -12,12 +12,12 @@
 <div class="container">
 
     <h2><c:out value="${title}" /></h2>
-    <p><b>Питання ${index + 1}:</b> <c:out value="${question.text}" /></p>
+    <p><b>Питання ${index + 1}:</b> <c:out value="${question.text()}" /></p>
 
     <form action="question" method="post">
-        <c:forEach var="option" items="${question.options}" varStatus="loop">
+        <c:forEach var="option" items="${question.options()}" varStatus="loop">
             <c:set var="selected" value="${loop.index == sessionScope.selectedAnswerIndex}" />
-            <c:set var="isCorrect" value="${loop.index == question.correctOptionIndex}" />
+            <c:set var="isCorrect" value="${loop.index == question.correctOptionIndex()}" />
 
             <label for="option${loop.index}"
                 <c:if test="${not empty sessionScope.lastAnswerCorrect}">

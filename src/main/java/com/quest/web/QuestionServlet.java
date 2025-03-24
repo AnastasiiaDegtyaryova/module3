@@ -1,6 +1,6 @@
 package com.quest.web;
 
-import org.example.quest.engine.Quest;
+import org.example.quest.model.Quest;
 import org.example.quest.service.GameService;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,6 +9,13 @@ import java.io.IOException;
 
 @WebServlet("/question")
 public class QuestionServlet extends HttpServlet {
+
+    private GameService gameService;
+
+    @Override
+    public void init() {
+        gameService = GameService.getInstance();
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -27,12 +34,12 @@ public class QuestionServlet extends HttpServlet {
         Quest quest = (Quest) session.getAttribute(AppConstants.Session.QUEST);
         Integer index = (Integer) session.getAttribute(AppConstants.Session.QUESTION_INDEX);
 
-        if (index >= quest.getQuestions().size()) {
+        if (index >= quest.questions().size()) {
             response.sendRedirect(AppConstants.Pages.RESULT);
             return;
         }
 
-        boolean correct = GameService.checkAnswer(session, userAnswer);
+        boolean correct = gameService.checkAnswer(session, userAnswer);
         session.setAttribute(AppConstants.Session.LAST_ANSWER_CORRECT, correct);
         session.setAttribute(AppConstants.Session.SELECTED_ANSWER_INDEX, userAnswer);
         response.sendRedirect(AppConstants.Pages.GAME);

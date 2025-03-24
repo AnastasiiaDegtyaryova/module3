@@ -1,5 +1,6 @@
 package org.example.quest.engine;
 
+import org.example.quest.model.Question;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,20 +10,20 @@ class QuestionTest {
     @Test
     void testGetText() {
         Question q = new Question("Що таке інкапсуляція, наслідування та поліморфізм?", List.of("Принципи ООП", "Фреймворки"), 0);
-        assertEquals("Що таке інкапсуляція, наслідування та поліморфізм?", q.getText());
+        assertEquals("Що таке інкапсуляція, наслідування та поліморфізм?", q.text());
     }
 
     @Test
     void testGetOptions() {
         List<String> options = List.of("A", "B", "C");
         Question q = new Question("Питання?", options, 2);
-        assertEquals(options, q.getOptions());
+        assertEquals(options, q.options());
     }
 
     @Test
     void testGetCorrectOptionIndex() {
         Question q = new Question("Щось?", List.of("X", "Y"), 1);
-        assertEquals(1, q.getCorrectOptionIndex());
+        assertEquals(1, q.correctOptionIndex());
     }
 
     @Test

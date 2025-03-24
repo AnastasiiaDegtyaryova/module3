@@ -1,16 +1,12 @@
-package org.example.quest.engine;
+package org.example.quest.model;
 
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 
-@Getter
-public class Question {
-    private final String text;
-    private final List<String> options;
-    private final int correctOptionIndex;
+import java.util.List;
 
+public record Question(String text, List<String> options, int correctOptionIndex) {
     @JsonCreator
     public Question(
             @JsonProperty("text") String text,

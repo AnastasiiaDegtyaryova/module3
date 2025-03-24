@@ -17,7 +17,6 @@ public final class AppConstants {
 
     public static final class RequestParam {
         public static final String QUEST_ID = "quest";
-        public static final String PLAYER_NAME = "playerName";
         public static final String ANSWER = "answer";
     }
 
